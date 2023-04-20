@@ -5,9 +5,12 @@
 }
 
 :root{
-    --main-color: hsla(196, 68%, 74%, 0.614);
-    --secondary-color: hsl(0, 0%, 0%);
-    --accent-color: hsla(63, 97%, 44%, 0.589);
+    --background-color: hsl(0, 0%, 100%);
+    --main-color: hsl(0, 0%, 0%);
+    --secondary-color: hsla(128, 62%, 22%, 0.934);
+    --accent-color: hsl(0, 0%, 100%);
+    --reject-color: hsl(0, 71%, 52%);
+    --artikel-color: hsla(204, 74%, 49%, 0.925);
 
     --basic-font-size: 18px;
     --max-text-length: 88ch;
@@ -17,47 +20,68 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--basic-font-size);
     line-height: 1.3;
-    background-color: var(--main-color);
+    background: var(--background-color);
 }
 
 h1{
     text-align: center;
     font-family: var(--header-font-family);
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: var(--main-color);
 }
 
 h2{
     text-align: center;
     font-family: var(--header-font-family);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
 }
 
 h3{
     text-align: center;
     font-family: var(--header-font-family);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
 }
 
 p,
-a,
 td{
     font-size: 0.9rem;
-    color: var(--secondary-color);
+    color: var(--main-color);
+    text-align: justify;
 }
 
 article
 {
     width: 80%;
     margin: 3% auto;
+    padding: 3%;
+    background: radial-gradient(var(--accent-color), var(--artikel-color));
 }
 
 nav{
-    text-align: center;    
+    text-align: center; 
+    margin: auto;
+    width: 90%; 
+    background: var(--secondary-color); 
+}
+
+nav a{
+    text-decoration: none; 
 }
 
 nav li{
     margin: 1%;
     list-style: none;
+    display: inline-block; 
+}
+
+a{
+    color: var(--accent-color);
+}
+
+a:hover{
+    color: var(--main-color);
 }
 
 .title{
@@ -65,3 +89,100 @@ nav li{
     margin: 2% auto;
     text-align: center;
 }
+
+#tabelle{
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--accent-color);
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr,
+td,
+th{
+    border: 1px solid;
+    text-align: center;
+}
+
+img{
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: solid;
+}
+
+img:active{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+form{
+    text-align: center;
+}
+
+fieldset{
+    margin: 2%;
+    border: 1px solid;
+    padding: 2%;
+}
+
+fieldset legend{ 
+   margin: auto;
+}
+
+input[type=submit]{
+    background-color: var(--secondary-color);
+}
+
+input[type=submit]:hover{
+    color: var(--accent-color);
+}
+
+input[type=reset]{
+    background-color: var(--reject-color);
+}
+
+input[type=reset]:hover{
+    color: var(--accent-color);
+}
+
+#fn,
+#ln,
+#email,
+#sch,
+#far{
+    width: 20%;   
+    /* margin: auto 1%; */
+    margin-left: 0%;
+}
+
+#gr{
+    width: 10%;
+    background-color: var(--accent-color);
+    margin: auto 1%;
+}
+
+#besonderheiten{
+    width: 30%;
+    margin: auto 1%;
+}
+
+label[for=besonderheiten]{
+    display: none;
+} 
+
+label[for=fn],
+label[for=ln],
+label[for=email],
+label[for=sch],
+label[for=far],
+label[for=gr]{
+    margin-right: 0%;
+    margin-left: 2%;
+}
+
+
+
