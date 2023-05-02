@@ -58,14 +58,24 @@ h3 {
   text-align: center;
 }
 
-figure img {
-  text-align: center;
-  width: 50%;
-}
-figure figcaption {
-  text-align: center;
+figure {
+  position: relative;
+  width: max-content;
   margin: auto;
   width: 50%;
+}
+figure img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
   background-color: hsl(0, 0%, 53%);
 }
 
@@ -85,6 +95,7 @@ nav {
   background-color: hsl(0, 0%, 100%);
   max-width: 98%;
   justify-content: center;
+  z-index: 1;
 }
 @media (min-width: 960px) {
   nav {
