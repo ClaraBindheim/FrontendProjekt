@@ -1,0 +1,68 @@
+// Layout variablen
+$layout-breakpoint-small: 960px; 
+// Color variablen
+$nav-background-color: hsl(0, 0%, 100%);
+$caption-background-color: hsl(0, 0%, 53%);
+
+h1,
+h2,
+h3{
+    text-align: center;
+}
+
+figure{
+
+    img{
+        text-align: center;
+        width: 50%;
+    }
+
+    figcaption{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        background-color: $caption-background-color;
+    }
+}
+
+article{
+    text-align: center;
+    margin: auto 2%;
+
+    p{
+        margin: 2% auto;
+    }
+
+    table{
+        margin: 2% auto;
+    }
+}
+
+nav{
+
+    display: flex;
+    background-color: $nav-background-color;
+    max-width: 98%;
+    justify-content: center;
+    @media (min-width: $layout-breakpoint-small){
+        position: sticky;
+        top: 0;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0%;
+        margin: 1% 0%;
+        width: 100%;
+    }
+
+    li{
+        margin: auto 2%;
+    }
+
+    li a{
+        white-space: nowrap;
+    }
+}

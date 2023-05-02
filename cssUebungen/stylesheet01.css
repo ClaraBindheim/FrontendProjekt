@@ -1,19 +1,19 @@
 *,
 ::before,
 ::after{
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 :root{
     --background-color: hsl(0, 0%, 100%);
     --main-color: hsl(0, 0%, 0%);
-    --secondary-color: hsla(128, 62%, 22%, 0.934);
-    --accent-color: hsl(0, 0%, 100%);
+    --secondary-color: hsla(207, 85%, 24%, 0.934);
+    --accent-color: hsl(0, 0%, 100%); 
     --reject-color: hsl(0, 71%, 52%);
+    --submit-color: hsl(109, 77%, 43%);
     --artikel-color: hsla(204, 74%, 49%, 0.925);
 
     --basic-font-size: 18px;
-    --max-text-length: 88ch;
 
     --header-font-family:'Times New Roman', Times, serif;
 
@@ -44,8 +44,7 @@ h3{
     color: var(--main-color);
 }
 
-p,
-td{
+p{
     font-size: 0.9rem;
     color: var(--main-color);
     text-align: justify;
@@ -53,7 +52,7 @@ td{
 
 article
 {
-    width: 80%;
+    width: 60%;
     margin: 3% auto;
     padding: 3%;
     background: radial-gradient(var(--accent-color), var(--artikel-color));
@@ -61,8 +60,7 @@ article
 
 nav{
     text-align: center; 
-    margin: auto;
-    width: 90%; 
+    margin: auto; 
     background: var(--secondary-color); 
 }
 
@@ -88,11 +86,12 @@ a:hover{
     width: 80%;
     margin: 2% auto;
     text-align: center;
+    background: var(--artikel-color);
 }
 
 #tabelle{
     margin: 5% auto;
-    width: 50%;
+    width: 70%;
     text-align: center;
     background-color: var(--accent-color);
     border: 1px solid;
@@ -110,7 +109,6 @@ img{
     width: 30%;
     margin: auto;
     display: block;
-    border: solid;
 }
 
 img:active{
@@ -134,7 +132,7 @@ fieldset legend{
 }
 
 input[type=submit]{
-    background-color: var(--secondary-color);
+    background-color: var(--submit-color);
 }
 
 input[type=submit]:hover{
@@ -182,6 +180,13 @@ label[for=far],
 label[for=gr]{
     margin-right: 0%;
     margin-left: 2%;
+}
+
+/* label:not()
+textbreite begrenzen mit ca 60 charaktern ch */
+
+#auf-dem-wasser > img{
+    border: solid;
 }
 
 

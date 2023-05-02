@@ -1,0 +1,12 @@
+nav {
+  background-color: hsl(0, 0%, 100%);
+  width: fit-content;
+}
+@media (min-width: 960px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=position.css.map */

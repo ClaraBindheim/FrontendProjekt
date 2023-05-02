@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  text-align: justify;
+  max-width: 70ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+#tabelle {
+  max-width: 100%;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+  border: 1px solid;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+figure img {
+  text-align: center;
+  width: 50%;
+}
+figure figcaption {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  background-color: hsl(0, 0%, 53%);
+}
+
+article {
+  text-align: center;
+  margin: auto 2%;
+}
+article p {
+  margin: 2% auto;
+}
+article table {
+  margin: 2% auto;
+}
+
+nav {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 98%;
+  justify-content: center;
+}
+@media (min-width: 960px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0%;
+  margin: 1% 0%;
+  width: 100%;
+}
+nav li {
+  margin: auto 2%;
+}
+nav li a {
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map */
