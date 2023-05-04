@@ -50,6 +50,11 @@ td,
 th {
   border: 1px solid;
   text-align: center;
+  padding: 1%;
+}
+
+nav a {
+  color: hsl(0, 0%, 100%);
 }
 
 h1,
@@ -60,7 +65,6 @@ h3 {
 
 figure {
   position: relative;
-  width: max-content;
   margin: auto;
   width: 50%;
 }
@@ -91,10 +95,7 @@ article table {
 }
 
 nav {
-  display: flex;
-  background-color: hsl(0, 0%, 100%);
-  max-width: 98%;
-  justify-content: center;
+  background-color: hsl(0, 0%, 0%);
   z-index: 1;
 }
 @media (min-width: 960px) {
@@ -105,14 +106,13 @@ nav {
 }
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0%;
-  margin: 1% 0%;
-  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
 }
-nav li {
-  margin: auto 2%;
+nav ul li {
+  margin: 1%;
 }
 nav li a {
   white-space: nowrap;
