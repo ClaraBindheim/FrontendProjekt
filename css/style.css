@@ -53,24 +53,75 @@ th {
   padding: 1%;
 }
 
-nav a {
+nav {
+  background-color: hsl(0, 0%, 0%);
+  position: fixed;
+  top: 0;
+  width: 22%;
+  height: 100%;
+  padding: 2%;
+  margin: 0%;
+}
+nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0%;
+  height: 90%;
+}
+nav li a {
+  white-space: wrap;
   color: hsl(0, 0%, 100%);
+  margin: 0%;
 }
 
-h1,
-h2,
-h3 {
+body {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0%;
+}
+body .title {
   text-align: center;
+  width: 78%;
+  margin-left: 22%;
+}
+body main {
+  text-align: center;
+  width: 78%;
+  margin-left: 22%;
+}
+
+article {
+  margin-bottom: 4%;
+}
+article p {
+  margin: auto;
+}
+article table {
+  margin: 2% auto;
+}
+article figure {
+  margin: 2% auto;
+}
+article form {
+  margin: 2% auto;
+  width: 50%;
+}
+article form fieldset {
+  text-align: start;
 }
 
 figure {
   position: relative;
-  margin: auto;
-  width: 50%;
+  width: 45%;
+  margin: 0%;
 }
 figure img {
   display: block;
-  margin: auto;
   text-align: center;
   width: 100%;
 }
@@ -81,41 +132,6 @@ figure figcaption {
   right: 0;
   text-align: center;
   background-color: hsl(0, 0%, 53%);
-}
-
-article {
-  text-align: center;
-  margin: auto 2%;
-}
-article p {
-  margin: 2% auto;
-}
-article table {
-  margin: 2% auto;
-}
-
-nav {
-  background-color: hsl(0, 0%, 0%);
-  z-index: 1;
-}
-@media (min-width: 960px) {
-  nav {
-    position: sticky;
-    top: 0;
-  }
-}
-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 5px;
-}
-nav ul li {
-  margin: 1%;
-}
-nav li a {
-  white-space: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */

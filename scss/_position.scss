@@ -3,6 +3,7 @@ $layout-breakpoint-small: 960px;
 // Color variablen
 $nav-background-color: hsl(0, 0%, 0%);
 $caption-background-color: hsl(0, 0%, 53%);
+$nav-color: hsl(0, 0%, 100%);
 
 h1,
 h2,
@@ -13,12 +14,11 @@ h3{
 figure{
 
     position: relative;
-    margin: auto;
-    width: 50%;
+    width: 45%;
+    margin: 0%;
 
     img{
         display: block;
-        margin: auto;
         text-align: center;
         width: 100%;
     }
@@ -30,19 +30,6 @@ figure{
         right: 0;
         text-align: center;
         background-color: $caption-background-color;
-    }
-}
-
-article{
-    text-align: center;
-    margin: auto 2%;
-
-    p{
-        margin: 2% auto;
-    }
-
-    table{
-        margin: 2% auto;
     }
 }
 
@@ -70,6 +57,7 @@ nav{
 
     li a{
         white-space: nowrap;
+        color: $nav-color;
     }
     
 }

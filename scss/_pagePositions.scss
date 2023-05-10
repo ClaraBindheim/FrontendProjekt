@@ -1,0 +1,20 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0%;
+
+    .title{
+        text-align: center;
+        width: 78%;
+        margin-left: 22%;
+    }
+
+    main{
+        text-align: center;
+        width: 78%;
+        margin-left: 22%;
+    }
+}
