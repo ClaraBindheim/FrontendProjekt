@@ -4,22 +4,21 @@ $nav-color: hsl(0, 0%, 100%);
 @use "mixins";
 
 nav{
+
     background-color: $nav-background-color;
     z-index: 1;
     position: sticky;
-    top: 10px;
-    // flex: 1 1 10em;
-    // height: 100%;
-    // padding: 1%;
+    top: 0px;
+    align-self: start;
 
-    // ul{
-    //     display: flex;
-    //     flex-flow: row wrap;
-    //     justify-content: flex-start;
-    //     padding: 0%;
-    //     height: 90%;
-    //     gap: 20px;
-    // }
+    ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    
+    li{
+        text-align: center;
+    }
+    }
 
     li a{
         white-space: wrap;

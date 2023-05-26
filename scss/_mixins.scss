@@ -1,5 +1,9 @@
-//Abrunden der Ecken eines Abschnittes
-@mixin boarder-radius($boarder-radius, $margin){
+//Headlines
+@mixin headlines($boarder-radius, $margin, $width){
     margin: $margin;
     border-radius: $boarder-radius;
+    width: $width;
+    text-align: center;
+                background-color: hsl(0, 0%, 0%);
+                color: hsl(0, 0%, 100%);
 }

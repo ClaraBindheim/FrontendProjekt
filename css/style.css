@@ -57,7 +57,15 @@ nav {
   background-color: hsl(0, 0%, 0%);
   z-index: 1;
   position: sticky;
-  top: 10px;
+  top: 0px;
+  align-self: start;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+nav ul li {
+  text-align: center;
 }
 nav li a {
   white-space: wrap;
@@ -66,29 +74,43 @@ nav li a {
 }
 
 body {
+  margin: 0%;
   display: grid;
-  grid-template-areas: "nav article1" "nav article2" "empty article3" "empty article4" "empty article5";
-  grid-template-columns: 1fr, 4fr;
+  grid-template-rows: 1fr, auto;
 }
 body .title {
+  margin: 2% auto;
+  border-radius: 20px;
+  width: 30%;
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
-  width: 30%;
-  margin: 2% auto;
-  border-radius: 20px;
-}
-body nav {
-  grid-area: nav;
-}
-body #verschiedene-vogelarten {
-  grid-area: article1;
 }
 
 article {
-  margin-bottom: 4%;
+  margin-bottom: 5%;
+  text-align: center;
 }
-article p,
+article p {
+  margin: 1% auto;
+}
+article h2 {
+  margin: 2% auto;
+  border-radius: 20px;
+  width: 25%;
+  text-align: center;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+article h3 {
+  margin-top: 5%;
+  margin: 2% auto;
+  border-radius: 20px;
+  width: 15%;
+  text-align: center;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
 article figure {
   margin: 1% auto;
 }
@@ -102,10 +124,15 @@ article form {
 article form fieldset {
   text-align: justify;
 }
+article .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50em, 1fr));
+  align-items: center;
+}
 
 figure {
   position: relative;
-  width: 45%;
+  width: 60%;
 }
 figure img {
   display: block;
