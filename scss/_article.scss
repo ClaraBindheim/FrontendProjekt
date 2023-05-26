@@ -1,16 +1,13 @@
 article{
     margin-bottom: 4%;
 
-    p{
-        margin: auto;
+    p,  
+    figure{
+        margin: 1% auto;
     }
 
     table{
-        margin: 2% auto;
-    }
-
-    figure{
-        margin: 2% auto;
+        margin: 4% auto;
     }
 
     form{
@@ -18,7 +15,7 @@ article{
         width: 50%;
 
         fieldset{
-            text-align: start;
+            text-align: justify;
         }
     }
 }

@@ -1,24 +1,25 @@
-// Color variablen
+//Colors
 $nav-background-color: hsl(0, 0%, 0%);
 $nav-color: hsl(0, 0%, 100%);
+@use "mixins";
 
 nav{
     background-color: $nav-background-color;
-    position: fixed;
-    top: 0;
-    width: 22%;
-    height: 100%;
-    padding: 2%;
-    margin: 0%;
+    z-index: 1;
+    position: sticky;
+    top: 10px;
+    // flex: 1 1 10em;
+    // height: 100%;
+    // padding: 1%;
 
-    ul{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 0%;
-        height: 90%;
-    }
+    // ul{
+    //     display: flex;
+    //     flex-flow: row wrap;
+    //     justify-content: flex-start;
+    //     padding: 0%;
+    //     height: 90%;
+    //     gap: 20px;
+    // }
 
     li a{
         white-space: wrap;

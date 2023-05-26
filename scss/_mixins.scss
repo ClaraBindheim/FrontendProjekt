@@ -1,0 +1,5 @@
+//Abrunden der Ecken eines Abschnittes
+@mixin boarder-radius($boarder-radius, $margin){
+    margin: $margin;
+    border-radius: $boarder-radius;
+}

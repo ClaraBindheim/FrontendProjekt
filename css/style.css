@@ -55,20 +55,9 @@ th {
 
 nav {
   background-color: hsl(0, 0%, 0%);
-  position: fixed;
-  top: 0;
-  width: 22%;
-  height: 100%;
-  padding: 2%;
-  margin: 0%;
-}
-nav ul {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0%;
-  height: 90%;
+  z-index: 1;
+  position: sticky;
+  top: 10px;
 }
 nav li a {
   white-space: wrap;
@@ -77,48 +66,46 @@ nav li a {
 }
 
 body {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0%;
+  display: grid;
+  grid-template-areas: "nav article1" "nav article2" "empty article3" "empty article4" "empty article5";
+  grid-template-columns: 1fr, 4fr;
 }
 body .title {
   text-align: center;
-  width: 78%;
-  margin-left: 22%;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  width: 30%;
+  margin: 2% auto;
+  border-radius: 20px;
 }
-body main {
-  text-align: center;
-  width: 78%;
-  margin-left: 22%;
+body nav {
+  grid-area: nav;
+}
+body #verschiedene-vogelarten {
+  grid-area: article1;
 }
 
 article {
   margin-bottom: 4%;
 }
-article p {
-  margin: auto;
+article p,
+article figure {
+  margin: 1% auto;
 }
 article table {
-  margin: 2% auto;
-}
-article figure {
-  margin: 2% auto;
+  margin: 4% auto;
 }
 article form {
   margin: 2% auto;
   width: 50%;
 }
 article form fieldset {
-  text-align: start;
+  text-align: justify;
 }
 
 figure {
   position: relative;
   width: 45%;
-  margin: 0%;
 }
 figure img {
   display: block;
