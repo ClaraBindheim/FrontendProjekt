@@ -9,11 +9,12 @@ nav{
     z-index: 1;
     position: sticky;
     top: 0px;
-    align-self: start;
+    padding: 0.1%;
 
     ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    align-items: center;//scrool-top-margine
     
     li{
         text-align: center;

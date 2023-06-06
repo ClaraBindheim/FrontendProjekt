@@ -58,11 +58,12 @@ nav {
   z-index: 1;
   position: sticky;
   top: 0px;
-  align-self: start;
+  padding: 0.1%;
 }
 nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  align-items: center;
 }
 nav ul li {
   text-align: center;
@@ -75,13 +76,12 @@ nav li a {
 
 body {
   margin: 0%;
-  display: grid;
-  grid-template-rows: 1fr, auto;
 }
 body .title {
   margin: 2% auto;
   border-radius: 20px;
   width: 30%;
+  padding: 0.5%;
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
@@ -98,6 +98,7 @@ article h2 {
   margin: 2% auto;
   border-radius: 20px;
   width: 25%;
+  padding: 0.5%;
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
@@ -107,9 +108,13 @@ article h3 {
   margin: 2% auto;
   border-radius: 20px;
   width: 15%;
+  padding: 0.5%;
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-flow: column wrap;
+  width: fit-content;
 }
 article figure {
   margin: 1% auto;
@@ -126,13 +131,13 @@ article form fieldset {
 }
 article .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
   align-items: center;
 }
 
 figure {
   position: relative;
-  width: 60%;
+  width: 70%;
 }
 figure img {
   display: block;

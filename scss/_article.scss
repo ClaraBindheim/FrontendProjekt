@@ -15,6 +15,9 @@ article{
     h3{
         margin-top: 5%;
         @include mixins.headlines(20px, 2% auto, 15%);
+        display: flex;
+        flex-flow: column wrap;
+        width: fit-content;
     }
 
     figure{
@@ -36,7 +39,7 @@ article{
 
     .content{
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(50em, 1fr));
+       grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
        align-items: center;
     }
 }
