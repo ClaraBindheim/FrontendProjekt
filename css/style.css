@@ -58,23 +58,70 @@ nav {
   z-index: 1;
   position: sticky;
   top: 0px;
-  padding: 0.1%;
+  float: left;
+  align-self: start;
+  height: 100vh;
 }
 nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  align-items: center;
-}
-nav ul li {
-  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 90%;
+  padding: 5%;
 }
 nav li a {
   white-space: wrap;
   color: hsl(0, 0%, 100%);
   margin: 0%;
 }
+@media (max-width: 60em) {
+  nav {
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 0%);
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    padding: 0%;
+    height: fit-content;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 2%;
+  }
+  nav li a {
+    white-space: wrap;
+    color: hsl(0, 0%, 100%);
+    margin: 0%;
+  }
+}
+@media (max-width: 35em) {
+  nav {
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 0%);
+    padding: 2%;
+    height: fit-content;
+    position: relative;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 2%;
+  }
+  nav li a {
+    white-space: wrap;
+    color: hsl(0, 0%, 100%);
+    margin: 0%;
+  }
+}
 
 body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   margin: 0%;
 }
 body .title {
@@ -85,6 +132,17 @@ body .title {
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-flow: column wrap;
+  width: fit-content;
+}
+@media (max-width: 60em) {
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0%;
+  }
 }
 
 article {
@@ -102,6 +160,9 @@ article h2 {
   text-align: center;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-flow: column wrap;
+  width: fit-content;
 }
 article h3 {
   margin-top: 5%;
@@ -126,18 +187,26 @@ article form {
   margin: 2% auto;
   width: 50%;
 }
-article form fieldset {
-  text-align: justify;
-}
-article .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
-  align-items: center;
+@media (max-width: 60em) {
+  article p {
+    font-size: 1rem;
+    margin: 1% auto;
+    width: 90%;
+  }
+  article figure {
+    margin: 0% auto;
+  }
+  article table {
+    margin: 4% auto;
+  }
+  article form {
+    margin: 2% auto;
+  }
 }
 
 figure {
   position: relative;
-  width: 70%;
+  width: 50%;
 }
 figure img {
   display: block;
@@ -151,6 +220,11 @@ figure figcaption {
   right: 0;
   text-align: center;
   background-color: hsl(0, 0%, 53%);
+}
+@media (max-width: 60em) {
+  figure {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

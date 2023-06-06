@@ -3,7 +3,7 @@ $caption-background-color: hsl(0, 0%, 53%);
 figure{
 
     position: relative;
-    width: 70%;
+    width: 50%;
 
     img{
         display: block;
@@ -19,4 +19,11 @@ figure{
         text-align: center;
         background-color: $caption-background-color;
     }
+
+    // small screen
+    @media (max-width: 60em){
+
+        width: 100%;
+            
+    }   
 }
