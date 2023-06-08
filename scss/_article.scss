@@ -4,6 +4,8 @@
 article{
      margin-bottom: 5%;
      text-align: center;
+
+     scroll-margin-top: 10px;
     
      p{
          margin: 1% auto;
@@ -33,9 +35,11 @@ article{
 
      }
 
-    // small screen
+    // middel & small screen
     @media (max-width: 60em){
-
+        
+            scroll-margin-top: 100px;
+        
         p{
             font-size: 1rem;
             margin: 1% auto;
@@ -54,6 +58,12 @@ article{
            margin: 2% auto;
         }
     }   
+
+    //small screen
+    @media (max-width: 35em){
+        
+        scroll-margin-top: 10px;
+} 
 
  }
 
