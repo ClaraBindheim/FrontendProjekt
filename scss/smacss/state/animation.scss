@@ -5,11 +5,7 @@
     background-repeat: no-repeat;
     transition: 2.5s;
 
-    animation-name: animate-birds;
-    animation-duration: 10s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;//zusammenfassen zu einer Zeile
+    animation: animate-birds 10s ease-in-out infinite;
     
 }
 
