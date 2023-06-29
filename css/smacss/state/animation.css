@@ -37,8 +37,12 @@
     background-image: url("../../../images/kolibri.png");
     opacity: 1;
   }
-  100% {
+  87.5% {
     opacity: 0;
+  }
+  100% {
+    background-image: url("../../../images/rabe.png");
+    opacity: 1;
   }
 }
 
