@@ -1,0 +1,46 @@
+ //body mediaQuerie
+ body{
+    // middel & small screen
+    @media (max-width: 60em){
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0%;
+    }  
+ }
+ 
+ //article mediaQueries
+ .l-article{
+ 
+ // middel & small screen in state
+ @media (max-width: 60em){
+        
+    scroll-margin-top: 100px;
+
+p{
+    font-size: 1rem;
+    margin: 1% auto;
+    width: 90%;
+}
+
+.a-figure{
+    margin: 0% auto;
+}
+
+.a-table{
+    margin: 4% auto;
+}
+
+.a-form{
+   margin: 2% auto;
+}
+}   
+
+//small screen
+@media (max-width: 35em){
+
+    scroll-margin-top: 10px;
+} 
+
+ }

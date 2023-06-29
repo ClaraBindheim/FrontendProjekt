@@ -1,0 +1,35 @@
+@media (max-width: 60em) {
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0%;
+  }
+}
+
+@media (max-width: 60em) {
+  .l-article {
+    scroll-margin-top: 100px;
+  }
+  .l-article p {
+    font-size: 1rem;
+    margin: 1% auto;
+    width: 90%;
+  }
+  .l-article .a-figure {
+    margin: 0% auto;
+  }
+  .l-article .a-table {
+    margin: 4% auto;
+  }
+  .l-article .a-form {
+    margin: 2% auto;
+  }
+}
+@media (max-width: 35em) {
+  .l-article {
+    scroll-margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=mediaQueries.css.map */

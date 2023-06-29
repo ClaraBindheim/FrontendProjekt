@@ -1,0 +1,30 @@
+@use "mixins";
+
+body{
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 0%;
+
+    .title{
+                @include mixins.headlines(20px, 2% auto, 30%);
+            }       
+
+    .s-animation{
+        position: fixed;
+        bottom: 0px;
+        right: 10px;
+        width: 10%;
+        height: 20%;
+        z-index: 2;
+
+        .rabe, 
+        .spatz, 
+        .raubvogel, 
+        .kolibri{
+            position: absolute;
+            object-fit: contain;
+        }
+    }
+
+}

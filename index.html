@@ -5,11 +5,12 @@
             <meta name="author" content="Clara Bindheim">
             <meta name="viewport" content="width=device-width">
             <!-- <title>Vogelarten in Berlin</title> -->
-            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/smacss/style.css">
             <script src="#" defer async></script>
         </head>
         <body>
-            <nav>
+            <div class="s-animation"></div>
+            <nav class="m-nav-primary">
                 <ul>
                     <li><a href="#verschiedene-vogelarten">Verschiedenen Vogelarten</a></li>
                     <li><a href="#in-gärten-und-parks">In Gärten und Parks</a></li>
@@ -21,7 +22,7 @@
             </nav>
             <main>
                 <h1 class="title">Vogelarten in Berlin</h1>
-                <article id="verschiedene-vogelarten">
+                <article id="verschiedene-vogelarten" class="l-article">
                     <h2>Verschiedene Vogelarten</h2>
                         <p>Die Artenvielfalt ist, anders als man in einer Großstadt erwarten würde, auch bei Vögeln groß. Mehr als zwei Drittel aller Vogelarten, 
                             die bei uns in Deutschland vorkommen, brüten in Berlin! Insgesamt wurden 307 Vogelarten in Berlin nachgewiesen.</p>
@@ -34,7 +35,7 @@
                             roten Kehle erkennen, während sich die Nachtigall eher hören als sehen lässt. Grünfink, Stieglitz und Eichelhäher sind weitere Berliner Vogelarten. 
                             Die Trauerseeschwalbe brütet in der Nähe vom Müggelsee.</p>
                         <p>Einige weniege Vogelarten werden, nach lieblings Habitat sortiert, hier vorgestellt.</p>
-                        <table id="tabelle">
+                        <table id="tabelle" class="a-table">
                             <tr>
                                 <th>In Gärten und Parks</th>
                                 <th>Auf dem Wasser</th>
@@ -52,15 +53,15 @@
                             </tr>
                         </table>    
                 </article>
-                <article id="in-gärten-und-parks">
+                <article id="in-gärten-und-parks" class="l-article">
                     <h2>In Gärten und Parks</h2>
                         <h3>Rotkehlchen</h3>
-                        <div class="content">
-                            <figure>
+                        <div class="a-content">
+                            <figure class="m-figure">
                                 <img src="images/Rotkehlchen.jpeg" alt="Rotkehlchen">
                                 <figcaption>Das Abbild eines Rotkehlchens</figcaption>
                             </figure>
-                            <div class="text">
+                            <div class="a-text">
                             <p>Seinen Namen verdankt das Rotkehlchen seinem markant rot-orange gefärbten Gefieder, das sich von der Brust über die Kehle hoch zur Stirn zieht und vom
                                 dunklen Federkleid an der Oberseite absetzt. Dadurch kann man es leicht identifizieren. Da Rotkehlchen gern und ausgiebig baden, sind sie häufig an 
                                 Wasserstellen zu beobachten. Wegen ihrer drolligen Gestalt und ihren großen runden Augen zählen sie außerdem zu den beliebtesten Gästen am Futterhäuschen. 
@@ -74,12 +75,12 @@
                             </div>
                         </div>
                         <h3>Nachtigall</h3>
-                        <div class="content">
-                            <figure>
+                        <div class="a-content">
+                            <figure class="m-figure">
                                 <img src="images/Nachtigall.jpeg" alt="Nachtigall">
                                 <figcaption>Das Abbild einer Nachtigall</figcaption>
                             </figure>
-                            <div class="text">     
+                            <div class="a-text">     
                                 <p>Unscheinbar aber stimmgewaltig ist sie, die Nachtigall (Luscinia megarhynchos). Nur etwa 16 cm groß mit rötlich-braunem Gefieder bewegt sich die „Königin der Nacht“ 
                                     meist am Boden, denn dort, im Unterwuchs und Halbschatten, brütet das Weibchen seine vier bis sechs olivgrauen oder -braunen Eierchen aus. Ihre Nahrung 
                                     besteht hauptsächlich aus Insekten und deren Larven. Auch Regenwürmer und Spinnen stehen auf ihrem Speiseplan. Im Spätsommer frisst sie zusätzlich Beeren und saftige
@@ -95,15 +96,15 @@
                             </div>        
                         </div>
                 </article>
-                <article id="auf-dem-wasser">
+                <article id="auf-dem-wasser" class="l-article">
                     <h2>Auf dem Wasser</h2>
                         <h3>Enten</h3>
-                        <div class="content">
-                            <figure>
+                        <div class="a-content">
+                            <figure class="m-figure">
                                 <img src="images/Ente.jpeg" alt="Ente">
                                 <figcaption>Das Abbild einer Ente</figcaption>
                             </figure>
-                            <div class="text">
+                            <div class="a-text">
                                 <p>Enten gehören sicherlich zu den bekanntesten Vögeln hierzulande. Das gilt natürlich vor allem für die häufigste Art, die Stockente, aber auch in der 
                                     Innenstadt gibt es einige unterschiedliche Entenarten, die sich gut beobachten lassen und leicht voneinander zu unterscheiden sind. Vor allem durch 
                                     das oft sehr bunte und charakteristische gefärbte Prachtkleid der Männchen sind Enten gut zu bestimmen.</p>
@@ -124,12 +125,12 @@
                             </div>        
                         </div>
                         <h3>Gänse</h3>
-                        <div class="content">
-                            <figure>
+                        <div class="a-content">
+                            <figure class="a-figure">
                                 <img src="images/Gänse.jpeg" alt="Gänse">
                                 <figcaption>Das Abbild einer Gans</figcaption>
                             </figure>
-                            <div class="text">
+                            <div class="a-text">
                                 <p>Gänse gehören zur Ordnung der Entenvögel. Zusammen mit den Enten zählen sie zu den auffälligsten Wasservögeln hierzulande und sind an fast allen größeren Gewässern zu finden. 
                                     Die wichtigsten Unterschiede und Gemeinsamkeiten können Sie hier nachlesen.</p>
                                 <p>Regelmäßiger Brutvogel in Deutschland ist nur die Graugans (Anser anser), die auch die Stammform unserer Hausgänse ist. Sie ist ein in ganz Deutschland verbreiteter Brutvogel 
@@ -140,15 +141,15 @@
                             </div>
                         </div>
                 </article>
-                <article id="zwischen-hochhäusern">
+                <article id="zwischen-hochhäusern"class="l-article" >
                     <h2>Zwischen Hochhäusern</h2> 
                         <h3>Haussperrling</h3>
-                    <div class="content">
-                        <figure>
+                    <div class="a-content">
+                        <figure class="a-figure">
                             <img src="images/Haussperling.jpeg" alt="Haussperling">
                             <figcaption>Das Abbild eines Haussperlings</figcaption>
                         </figure>
-                        <div class="text">
+                        <div class="a-text">
                             <p>Haussperlinge sind überwiegend Höhlenbrüter. Sie nutzen alle möglichen Hohlräume und Nischen an Gebäuden, gelegentlich sind sie "Untermieter" in den großen Reisignestern der Weißstörche. 
                                 Die voluminösen Nester (bis zu 3 Jahresbruten) werden aus Stroh, Halmen, Papierfetzen gebaut und fein mit Federchen und Pflanzenwolle ausgepolstert.</p>
                             <p>In der Brutzeit von April bis August werden bis zu 7 Eier etwa 12 Tage bebrütet. Die Nestlingszeit beträgt 12 bis 18 Tage. Nach dem Flüggewerden der Jungen 
@@ -160,12 +161,12 @@
                         </div>
                     </div>
                     <h3>Tauben</h3>
-                    <div class="content">
-                        <figure>
+                    <div class="a-content">
+                        <figure class="a-figure">
                             <img src="images/Taube.jpg" alt="Taube">
                             <figcaption>Das Abbild einer Taube</figcaption>
                         </figure>
-                        <div class="text">
+                        <div class="a-text">
                             <p>Unsere heimischen Taubenarten sind recht große Vögel und eigentlich kaum zu übersehen. Dennoch wird meist diesen Vögeln, im Vergleich zu anderen Vogelarten, recht wenig Beachtung geschenkt, 
                                 obwohl Tauben über sehr interessante Verhaltensweisen verfügen, die an Fähigkeiten unserer Säugetiere erinnern.</p>
                             <p>Im Gegensatz zu den meisten Vogelarten, die beim Trinken und zum Schlucken des Wassers ständig den Kopf heben müssen, können Tauben das Wasser einfach einsaugen</p>
@@ -175,7 +176,7 @@
                         </div>
                     </div>            
                 </article>
-                <article id="gefahren-in-der-großstadt">
+                <article id="gefahren-in-der-großstadt" class="l-article">
                     <h2>Gefahren in der Großstadt</h2>
                         <h3>Glasscheiben</h3>
                         <p>Zahlenmäßig zu den wichtigsten Todesursachen von Vögeln gehört zweifellos die Kollision mit Glasscheiben. Die Länderarbeitsgemeinschaft der staatlichen Vogelschutzwarten hat 2017 eine Schätzung 
@@ -201,12 +202,12 @@
                             jagende Eulen. Bei diesen Arten könnte dieser Faktor daher durchaus zu Bestandsrückgängen führen oder laufende Bestandserholungen gefährden. Das aktuelle Vogelsterben betrifft jedoch vor allem kleinere Arten, 
                             zudem passt das kontinuierliche langsame Anwachsen des Verkehrs nicht zum festgestellten deutlichen Bestandsknick bei den Vögeln.</p>
                 </article>        
-                <article id="vogel-gesichtet">
+                <article id="vogel-gesichtet" class="l-article">
                         <h2>Vogel gesichtet?!</h2>
                         <p>Haben Sie einen Vogel gesichtet und wollen wissen zu welcher Vogelart er gehört? Füllen Sie die Form aus und wir schicken 
                             Ihnen mögliche Arten zu.
                         </p>
-                    <form>
+                    <form class="a-form">
                         <fieldset>
                             <legend>Persönliche Daten</legend>
                             <label for="fn">Vorname</label>

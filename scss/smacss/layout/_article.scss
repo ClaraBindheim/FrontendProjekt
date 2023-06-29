@@ -1,0 +1,40 @@
+@use "mixins";
+
+// Article mit Media Queries
+.l-article{
+     margin-bottom: 5%;
+     text-align: center;
+
+     scroll-margin-top: 10px;
+    
+     p{
+         margin: 1% auto;
+     }
+
+     h2{
+         @include mixins.headlines(20px, 2% auto, 25%);
+     }
+
+     h3{
+         margin-top: 5%;
+         @include mixins.headlines(20px, 2% auto, 15%);
+    }
+
+    .m-figure{
+         margin: 1% auto;
+     }
+
+     .a-table{
+         margin: 4% auto;
+     }
+
+     .a-form{
+        margin: 2% auto;
+         width: 50%;
+
+
+     }
+
+ }
+
+

@@ -1,0 +1,53 @@
+.s-animation{
+    background-image: url("../../../images/rabe.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2.5s;
+    
+    animation-name: animate-birds;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;//zusammenfassen zu einer Zeile
+    
+}
+
+@keyframes animate-birds{
+    0%{
+        background-image: url("../../../images/rabe.png");
+        opacity: 1;
+    }
+    12.5%{
+        opacity: 0;
+    }
+    25%{
+        background-image: url("../../../images/raubvogel.png");
+        opacity: 1;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    50%{
+        background-image: url("../../../images/spatz.png");
+        opacity: 1;
+    }
+    62.5%{
+        opacity: 0;
+    }
+    75%{
+        background-image: url("../../../images/kolibri.png");
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
