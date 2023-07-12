@@ -6,6 +6,13 @@
     transition: 2.5s;
 
     animation: animate-birds 10s ease-in-out infinite;
+
+    p{
+        position: relative;
+        top: -50px;
+        font-family: cursive;
+        color: hsl(0, 100%, 50%);
+    }
     
 }
 

@@ -174,50 +174,6 @@ body .s-animation .kolibri {
   color: hsl(0, 0%, 100%);
   margin: 0%;
 }
-@media (max-width: 60em) {
-  .m-nav-primary {
-    font-size: 1rem;
-    background-color: hsl(0, 0%, 0%);
-    z-index: 1;
-    position: sticky;
-    top: 0px;
-    padding: 0%;
-    height: fit-content;
-  }
-  .m-nav-primary ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 0%;
-    padding: 2%;
-  }
-  .m-nav-primary li a {
-    white-space: wrap;
-    color: hsl(0, 0%, 100%);
-    margin: 0%;
-  }
-}
-@media (max-width: 35em) {
-  .m-nav-primary {
-    font-size: 1rem;
-    background-color: hsl(0, 0%, 0%);
-    padding: 2%;
-    height: fit-content;
-    position: relative;
-  }
-  .m-nav-primary ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 0%;
-    padding: 2%;
-  }
-  .m-nav-primary li a {
-    white-space: wrap;
-    color: hsl(0, 0%, 100%);
-    margin: 0%;
-  }
-}
 
 .m-figure {
   transition: transform 2s;
@@ -242,6 +198,12 @@ li:hover {
   background-repeat: no-repeat;
   transition: 2.5s;
   animation: animate-birds 10s ease-in-out infinite;
+}
+.s-animation p {
+  position: relative;
+  top: -50px;
+  font-family: cursive;
+  color: hsl(0, 100%, 50%);
 }
 
 @keyframes animate-birds {
@@ -288,6 +250,12 @@ li:hover {
 }
 
 @media (max-width: 60em) {
+  .s-animation p {
+    display: none;
+  }
+}
+
+@media (max-width: 60em) {
   .l-article {
     scroll-margin-top: 100px;
   }
@@ -296,8 +264,10 @@ li:hover {
     margin: 1% auto;
     width: 90%;
   }
-  .l-article .a-figure {
+  .l-article .m-figure {
     margin: 0% auto;
+    transition: none;
+    transform: none;
   }
   .l-article .a-table {
     margin: 4% auto;
@@ -309,6 +279,51 @@ li:hover {
 @media (max-width: 35em) {
   .l-article {
     scroll-margin-top: 10px;
+  }
+}
+
+@media (max-width: 60em) {
+  .m-nav-primary {
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 0%);
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    padding: 0%;
+    height: fit-content;
+  }
+  .m-nav-primary ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 2%;
+  }
+  .m-nav-primary li a {
+    white-space: wrap;
+    color: hsl(0, 0%, 100%);
+    margin: 0%;
+  }
+}
+@media (max-width: 35em) {
+  .m-nav-primary {
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 0%);
+    padding: 2%;
+    height: fit-content;
+    position: relative;
+  }
+  .m-nav-primary ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 2%;
+  }
+  .m-nav-primary li a {
+    white-space: wrap;
+    color: hsl(0, 0%, 100%);
+    margin: 0%;
   }
 }
 

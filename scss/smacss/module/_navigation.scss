@@ -29,57 +29,7 @@ $nav-color: hsl(0, 0%, 100%);
          margin: 0%;
      }  
 
-// middel screen
-@media (max-width: 60em){
 
-    font-size: 1rem;
-    background-color: $nav-background-color;
-    z-index: 1;
-    position: sticky;
-    top: 0px;
-    padding: 0%;
-    height: fit-content;
-
-    ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin: 0%;
-        padding: 2%;
-     }
-
-     li a{
-         white-space: wrap;
-         color: $nav-color;
-         margin: 0%;
-     }
-        
-}
-
- // small screen
- @media (max-width: 35em){
-
-    font-size: 1rem;
-    background-color: $nav-background-color;
-    padding: 2%;
-    height: fit-content;
-    position: relative;
-
-    ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin: 0%;
-        padding: 2%;
-     }
-
-     li a{
-         white-space: wrap;
-         color: $nav-color;
-         margin: 0%;
-     }
-        
-}
 
 }
 

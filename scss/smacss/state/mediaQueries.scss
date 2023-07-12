@@ -1,3 +1,6 @@
+ //Colors
+$nav-background-color: hsl(0, 0%, 0%);
+$nav-color: hsl(0, 0%, 100%);
  //body mediaQuerie
  body{
     // middel & small screen
@@ -10,6 +13,16 @@
     }  
  }
  
+
+ .s-animation{
+
+    @media (max-width: 60em){
+        p{
+            display: none;
+        }
+    }
+
+ }
  //article mediaQueries
  .l-article{
  
@@ -24,8 +37,10 @@ p{
     width: 90%;
 }
 
-.a-figure{
+.m-figure{
     margin: 0% auto;
+    transition: none;
+    transform: none;
 }
 
 .a-table{
@@ -35,12 +50,69 @@ p{
 .a-form{
    margin: 2% auto;
 }
+
 }   
 
 //small screen
 @media (max-width: 35em){
 
     scroll-margin-top: 10px;
+
 } 
 
  }
+
+.m-nav-primary{
+
+    // middel screen
+@media (max-width: 60em){
+
+    font-size: 1rem;
+    background-color: $nav-background-color;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    padding: 0%;
+    height: fit-content;
+
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 0%;
+        padding: 2%;
+     }
+
+     li a{
+         white-space: wrap;
+         color: $nav-color;
+         margin: 0%;
+     }
+        
+}
+
+ // small screen
+ @media (max-width: 35em){
+
+    font-size: 1rem;
+    background-color: $nav-background-color;
+    padding: 2%;
+    height: fit-content;
+    position: relative;
+
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 0%;
+        padding: 2%;
+     }
+
+     li a{
+         white-space: wrap;
+         color: $nav-color;
+         margin: 0%;
+     }
+        
+}
+}
