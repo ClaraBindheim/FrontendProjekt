@@ -8,6 +8,12 @@
 }
 
 @media (max-width: 60em) {
+  .m-figure {
+    width: 100%;
+  }
+}
+
+@media (max-width: 60em) {
   .s-animation p {
     display: none;
   }
@@ -27,16 +33,16 @@
     transition: none;
     transform: none;
   }
-  .l-article .a-table {
+  .l-article .table {
     margin: 4% auto;
   }
-  .l-article .a-form {
+  .l-article .m-form {
     margin: 2% auto;
   }
 }
 @media (max-width: 35em) {
   .l-article {
-    scroll-margin-top: 10px;
+    scroll-margin-top: 60px;
   }
 }
 
@@ -53,7 +59,7 @@
   .m-nav-primary ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0%;
     padding: 2%;
   }
@@ -65,23 +71,83 @@
 }
 @media (max-width: 35em) {
   .m-nav-primary {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 35em) {
+  .m-nav-mobile {
     font-size: 1rem;
     background-color: hsl(0, 0%, 0%);
-    padding: 2%;
+    padding: 0%;
     height: fit-content;
-    position: relative;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0%;
+    visibility: visible;
   }
-  .m-nav-primary ul {
+  .m-nav-mobile .dropdown {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 0%;
-    padding: 2%;
+    flex-flow: column nowrap;
+    width: 100%;
   }
-  .m-nav-primary li a {
+  .m-nav-mobile .dropdown #icons {
+    align-self: flex-end;
+    width: 10%;
+  }
+  .m-nav-mobile .dropdown #icons #close {
+    display: none;
+  }
+  .m-nav-mobile .dropdown #box {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    width: 8%;
+    height: 60%;
+    opacity: 0%;
+  }
+  .m-nav-mobile .dropdown label {
+    display: none;
+  }
+  .m-nav-mobile .dropdown #box:checked ~ ul {
+    visibility: visible;
+  }
+  .m-nav-mobile .dropdown #box:checked {
+    height: 6%;
+    top: 1%;
+  }
+  .m-nav-mobile .dropdown #box:checked ~ #icons #menu {
+    display: none;
+  }
+  .m-nav-mobile .dropdown #box:checked ~ #icons #close {
+    display: block;
+  }
+  .m-nav-mobile .dropdown ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    visibility: collapse;
+  }
+  .m-nav-mobile .dropdown li {
+    text-align: center;
+    margin: 5% 0%;
+    transition: none;
+    transform: none;
+  }
+  .m-nav-mobile .dropdown li a {
+    width: 100%;
     white-space: wrap;
     color: hsl(0, 0%, 100%);
-    margin: 0%;
+    text-align: center;
+  }
+  .m-nav-mobile .dropdown li:hover {
+    opacity: 50%;
   }
 }
 

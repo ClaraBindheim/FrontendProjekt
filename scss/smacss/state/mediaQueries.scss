@@ -12,6 +12,15 @@ $nav-color: hsl(0, 0%, 100%);
         margin: 0%;
     }  
  }
+
+ .m-figure{
+    // small screen
+    @media (max-width: 60em){
+
+        width: 100%;
+            
+    }  
+ }
  
 
  .s-animation{
@@ -23,6 +32,8 @@ $nav-color: hsl(0, 0%, 100%);
     }
 
  }
+
+
  //article mediaQueries
  .l-article{
  
@@ -43,11 +54,11 @@ p{
     transform: none;
 }
 
-.a-table{
+.table{
     margin: 4% auto;
 }
 
-.a-form{
+.m-form{
    margin: 2% auto;
 }
 
@@ -56,7 +67,7 @@ p{
 //small screen
 @media (max-width: 35em){
 
-    scroll-margin-top: 10px;
+    scroll-margin-top: 60px;
 
 } 
 
@@ -78,7 +89,7 @@ p{
     ul{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin: 0%;
         padding: 2%;
      }
@@ -94,25 +105,116 @@ p{
  // small screen
  @media (max-width: 35em){
 
-    font-size: 1rem;
-    background-color: $nav-background-color;
-    padding: 2%;
-    height: fit-content;
-    position: relative;
-
-    ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin: 0%;
-        padding: 2%;
-     }
-
-     li a{
-         white-space: wrap;
-         color: $nav-color;
-         margin: 0%;
-     }
+    position: absolute;
+    visibility: hidden;
         
 }
 }
+
+.m-nav-mobile{
+    // small screen
+ @media (max-width: 35em){
+
+    font-size: 1rem;
+    background-color: $nav-background-color;
+    padding: 0%;
+    height: fit-content;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0%;
+    visibility: visible;
+
+    .dropdown{
+        
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    
+        #icons{
+
+            align-self: flex-end;
+            width: 10%;
+
+            #close{
+                
+                display: none;
+            }
+        }
+
+        #box{
+            position: absolute; 
+            right: 0;
+            top: 2%;
+            width: 8%;
+            height: 60%;
+            opacity: 0%;
+        }
+
+        label{
+            display: none;
+        }
+    
+        
+        #box:checked ~ ul {
+            
+            visibility: visible;
+
+        }
+
+        #box:checked{
+            height: 6%;
+            top: 1%;
+        }
+
+        #box:checked ~ #icons {
+            
+            #menu{
+                display: none;
+            }
+
+            #close{
+                display: block;
+            }
+
+        }
+
+        ul{
+            display: flex;
+            flex-flow:column nowrap;
+            justify-content: center;
+            margin: 0%;
+            padding: 0%;
+            visibility: collapse;
+            
+        }
+
+        li {
+
+            text-align: center;
+            margin: 5% 0%;
+            transition: none;
+            transform: none;
+
+            a{
+                width: 100%;
+                white-space: wrap;
+                color: $nav-color;
+                text-align: center;
+            
+            }
+
+        }
+
+        //Funktioniert nur wenn der Browser klein ist und nicht in der Gerätevorschau...
+        li:hover{
+            opacity: 50%;
+        }
+
+        
+        }
+ }
+}
+

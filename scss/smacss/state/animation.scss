@@ -3,13 +3,13 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 2.5s;
+    transition: 10s;
 
-    animation: animate-birds 10s ease-in-out infinite;
+    animation: animate-birds 40s ease-in-out infinite;
 
     p{
-        position: relative;
-        top: -50px;
+        position: absolute;
+        top: -50%;
         font-family: cursive;
         color: hsl(0, 100%, 50%);
     }
@@ -51,6 +51,23 @@
     }
 }
 
+.m-figure.scroll{
+
+        transition: 0.5s;
+
+        animation: scroll-animation 1s ease-in;
+
+}
+
+@keyframes scroll-animation{
+
+    0%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 
 
 

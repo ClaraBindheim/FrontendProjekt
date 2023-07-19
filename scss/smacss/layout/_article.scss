@@ -1,4 +1,4 @@
-@use "mixins";
+@use "../base/mixins";
 
 // Article mit Media Queries
 .l-article{
@@ -24,11 +24,11 @@
          margin: 1% auto;
      }
 
-     .a-table{
+     .table{
          margin: 4% auto;
      }
 
-     .a-form{
+     .m-form{
         margin: 2% auto;
          width: 50%;
 

@@ -18,12 +18,5 @@ $caption-background-color: hsl(0, 0%, 53%);
         right: 0;
         text-align: center;
         background-color: $caption-background-color;
-    }
-
-    // small screen
-    @media (max-width: 60em){
-
-        width: 100%;
-            
-    }   
+    } 
 }

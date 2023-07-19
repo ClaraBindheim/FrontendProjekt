@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width">
             <!-- <title>Vogelarten in Berlin</title> -->
             <link rel="stylesheet" href="css/smacss/style.css">
-            <script src="script.js"></script>
+            <script src="script.js" defer></script>
         </head>
         <body class="body">
             <div class="s-animation" id="animation"></div>
@@ -19,6 +19,25 @@
                     <li><a href="#gefahren-in-der-großstadt">Gefahren für Vögel in der Großstadt</a></li>
                     <li><a href="#vogel-gesichtet">Vogel gesichtet?!</a></li>
                 </ul>
+            </nav>
+            <nav class="m-nav-mobile">
+                <div class="dropdown">
+                    <input type="checkbox" id="box" />
+                    <label for="box">box</label>
+                <div id="icons">
+                    <img src="images/menu.png" alt="Menu" id="menu">
+                    <img src="images/close.png" alt="Close" id="close">
+                </div>
+                    <ul>
+                        <li><a href="#verschiedene-vogelarten">Verschiedenen Vogelarten</a></li>
+                        <li><a href="#in-gärten-und-parks">In Gärten und Parks</a></li>
+                        <li><a href="#auf-dem-wasser">Auf dem Wasser</a></li>
+                        <li><a href="#zwischen-hochhäusern">Zwischen Hochhäusern</a></li>
+                        <li><a href="#zwischen-hochhäusern">Zwischen Hochhäusern</a></li>
+                        <li><a href="#gefahren-in-der-großstadt">Gefahren für Vögel in der Großstadt</a></li>
+                        <li><a href="#vogel-gesichtet">Vogel gesichtet?!</a></li>
+                    </ul>
+                </div>
             </nav>
             <main class="main">
                 <h1 class="title">Vogelarten in Berlin</h1>
@@ -35,7 +54,7 @@
                             roten Kehle erkennen, während sich die Nachtigall eher hören als sehen lässt. Grünfink, Stieglitz und Eichelhäher sind weitere Berliner Vogelarten. 
                             Die Trauerseeschwalbe brütet in der Nähe vom Müggelsee.</p>
                         <p>Einige weniege Vogelarten werden, nach lieblings Habitat sortiert, hier vorgestellt.</p>
-                        <table id="tabelle" class="a-table">
+                        <table id="tabelle" class="table">
                             <tr>
                                 <th>In Gärten und Parks</th>
                                 <th>Auf dem Wasser</th>
@@ -207,15 +226,15 @@
                         <p>Haben Sie einen Vogel gesichtet und wollen wissen zu welcher Vogelart er gehört? Füllen Sie die Form aus und wir schicken 
                             Ihnen mögliche Arten zu.
                         </p>
-                    <form class="a-form">
+                    <form class="m-form">
                         <fieldset>
                             <legend>Persönliche Daten</legend>
                             <label for="fn">Vorname</label>
-                            <input id="fn" type="text" name="fn" pattern="[A-Za-z]{2}">
+                            <input id="fn" type="text" name="fn" pattern="[A-Za-z]{2,}" placeholder="Vorname">
                             <label for="ln">Nachname</label>
-                            <input id="ln" type="text" name="ln" pattern="[A-Za-z]{2}">
+                            <input id="ln" type="text" name="ln" pattern="[A-Za-z]{2,}" placeholder="Nachname">
                             <label for="email">Email-Adresse</label>
-                            <input id="email" type="email" name="email" required>
+                            <input id="email" type="email" name="email" required placeholder="E-Mail">
                         </fieldset>
                         <fieldset>
                             <legend>Merkmale des gesichteten Vogels</legend>
@@ -226,16 +245,17 @@
                                 <option value="g">Groß</option>
                             </select>
                             <label for="far">Farbe</label>
-                            <input id="far" type="text" name="far">
+                            <input id="far" type="text" name="far" placeholder="Farbe">
                             <label for="sch">Schnabelform</label>
-                            <input id="sch" type="text" name="sch">
+                            <input id="sch" type="text" name="sch" placeholder="Schnabelform">
                         </fieldset>
                         <fieldset>
                             <legend>Weitere Besonderheiten</legend>
                             <label for="besonderheiten">Besonderheiten</label>
-                            <input id="besonderheiten" type="textfield" name="besonderheiten">
+                            <textarea id="besonderheiten" rows="6" cols="20" name="besonderheiten" placeholder="Hier Text eingeben..."></textarea>
                         </fieldset>
                         <input type="submit">
+                        <p id="submit">Daten abgeschickt</p>
                         <input type="reset">
                     </form>
                 </article>

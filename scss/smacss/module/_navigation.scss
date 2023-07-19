@@ -2,7 +2,7 @@
 $nav-background-color: hsl(0, 0%, 0%);
 $nav-color: hsl(0, 0%, 100%);
 
-// Nav mit Media Queries
+
 .m-nav-primary{
 // large screen
     background-color: $nav-background-color;
@@ -19,7 +19,6 @@ $nav-color: hsl(0, 0%, 100%);
         justify-content: space-between;
         height: 90%;
         padding: 5%;
-     //scrool-top-margine
     
      }
 
@@ -29,8 +28,15 @@ $nav-color: hsl(0, 0%, 100%);
          margin: 0%;
      }  
 
+     li a:active{
+        opacity: 50%;
+     }
 
+}
 
+.m-nav-mobile{
+    position: absolute;
+    visibility: hidden;
 }
 
 
